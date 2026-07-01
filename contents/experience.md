@@ -133,7 +133,6 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **Encrypted Communication:** Structured an edge-to-cloud telemetry infrastructure utilizing hardware-accelerated encrypted MQTT packets over cellular/Wi-Fi links to transmit secure volume logs, executing deep sleep profiles and hardware watchdog timers to handle sustained brownout scenarios.
 ![Description of the hardware or PCB layout](/static/assets/img/Fuel.png)
 ![Description of the hardware or PCB layout](/static/assets/img/Carbon.png)
-
 ---
 
 ### 9. 🚖 Automotive Ruggedized Power Supply & Signage Controller
