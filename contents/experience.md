@@ -131,6 +131,8 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **Technology Stack:** Ultra-Low-Power ESP32, Encrypted MQTT, Cellular Telemetry
 * **Telemetry Processing:** Implemented ultra-low-power ESP32 sensor nodes driven by high-accuracy pulse-output flow calculation algorithms to monitor fuel levels and prevent transport tampering.
 * **Encrypted Communication:** Structured an edge-to-cloud telemetry infrastructure utilizing hardware-accelerated encrypted MQTT packets over cellular/Wi-Fi links to transmit secure volume logs, executing deep sleep profiles and hardware watchdog timers to handle sustained brownout scenarios.
+![Description of the hardware or PCB layout](/static/assets/img/Fuel.png)
+![Description of the hardware or PCB layout](/static/assets/img/Carbon.png)
 
 ---
 
