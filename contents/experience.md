@@ -33,6 +33,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 > **Engineering Deep-Dive:** Under peak compressor draw, severe voltage sags triggered a thermal cascade inside the **WMZ11A** loop protection PTC thermistor, dramatically driving up its resistance. This resistance spike choked the current loop, starving the **PC817C** optocoupler's internal LED and corrupting the UART data stream.
 > By recalculating the dynamic current budget, the circuit was optimized by adjusting the series resistance network and sizing a **1N4752A (33V, 1W)** Zener regulator to clamp loop voltages safely above the saturation threshold. This modification maintained an optimal collector saturation current ($I_{C(\text{sat})}$) through the optocoupler's photo-transistor, ensuring clean, jitter-free logic-level transitions even during continuous 198V AC voltage sags.
 
+![Description of the hardware or PCB layout](/static/assets/img/Test_Bench.jpeg)
 ---
 
 ### 2. 🔥 Industrial Heat Pump Drive & Safety Control Infrastructure
@@ -58,7 +59,8 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 * Developed a firmware-level fault handler designed to calculate real-time thermodynamic efficiency trends across distributed sensor nodes.
 * Authored a hardware-software **"No Gas Protection"** interlock protocol: if the fuel manifold pressure or temperature changes reveal a lack of gas supply during an active ignition command (such as fuel exhaustion), the firmware executes a priority shutdown sequence. This protocol immediately cuts drive current to the compressor and isolates the fuel supply line, preventing a destructive high-vacuum state from compromising mechanical seals.
-
+![Description of the hardware or PCB layout](/static/assets/img/Heat_Pumo_table.jpeg)
+![Description of the hardware or PCB layout](/static/assets/img/Heat_pump_PCB.jpeg)
 ---
 
 ### 3. 💧 Touch-Interactive Smart Water Dispenser Platform
@@ -90,6 +92,8 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **Component Coordination:** Configured an Infineon IMC102T motor controller to operate as a dedicated real-time motor drive co-processor, pairing it with an ESP32 master microcontroller that coordinates electronic expansion valve (EEV) stepper motor control, system-wide diagnostics, and communication routing.
 
 ![Description of the hardware or PCB layout](/static/assets/img/IPM_drive.jpg)
+![Description of the hardware or PCB layout](/static/assets/img/IPM_drive_new.jpeg)
+
 ---
 
 ### 5. 🏎️ Field-Oriented Control (FOC) & Motor Drivers
