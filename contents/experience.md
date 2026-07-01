@@ -89,6 +89,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **System Design:** Designed and developed a comprehensive 220VAC HVAC control system integrating active Power Factor Correction (PFC) boost infrastructure and a single-shunt current feedback loop for phase current reconstruction.
 * **Component Coordination:** Configured an Infineon IMC102T motor controller to operate as a dedicated real-time motor drive co-processor, pairing it with an ESP32 master microcontroller that coordinates electronic expansion valve (EEV) stepper motor control, system-wide diagnostics, and communication routing.
 
+![Description of the hardware or PCB layout](/static/assets/img/IPM_drive.jpg)
 ---
 
 ### 5. 🏎️ Field-Oriented Control (FOC) & Motor Drivers
@@ -98,7 +99,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **Technology Stack:** Infineon iMOTION, MCEWizard, MCEDesigner, Space Vector PWM (SVPWM)
 * **Algorithm Optimization:** Configured and tuned Field-Oriented Control (FOC) algorithms for permanent magnet synchronous motors (PMSM) using Infineon iMOTION hardware. Developed single-shunt current reconstruction topologies to map rotor position accurately without external hall sensors.
 * **Control Loop Tuning:** Specialized in analyzing and tuning current regulator bandwidth, optimizing proportional-integral ($K_p/K_i$) loop gains, and establishing robust UART/Modbus communications with real-time Motion Control Engines (MCE) to guarantee stable torque generation under highly dynamic load steps.
-
+![Description of the hardware or PCB layout](/static/assets/img/Inverter.png)
 ---
 
 ### 6. 🌐 Industrial IoT & Robust Embedded Firmware
@@ -116,12 +117,12 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ### 7. 🔬 Heterogeneous Power Stage R&D
 
-* **Company:** National University of Sciences and Technology (NUST) R&D Lab
-* **Role:** Graduate Research Assistant
+* **Company:**  Sabro Technologies  R&D Lab
+* **Role:** Electronics Engineer
 * **Technology Stack:** Wide-Bandgap Semiconductors (GaN & SiC), Altium Designer, Thermal Modeling
 * **Next-Gen Topologies:** Researched and drafted advanced architectures for heterogeneous power stages using next-generation wide-bandgap semiconductors (Gallium Nitride and Silicon Carbide) targeted for 400V-class high-efficiency inverters.
 * **Dynamic Balancing:** Focused on balancing gate-drive timing dynamics, parasitic loop inductance reduction, and asymmetric thermal distribution across mixed-device legs to bypass the silicon efficiency plateau.
-
+![Description of the hardware or PCB layout](/static/assets/img/Power_Supply.jpg)
 ---
 
 ### 8. ⛽ Real-Time Secure Fuel Telemetry & Theft Prevention Node
