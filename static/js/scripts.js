@@ -187,7 +187,7 @@ function initHeroBackground() {
         minWidth: 200.0,
         scale: 1.0,
         scaleMobile: 1.0,
-        color: 0x3948d2,
+        color: 0x1e3a8a,
         backgroundAlpha: 0.0,
         points: 10.0,
         maxDistance: 22.0,
