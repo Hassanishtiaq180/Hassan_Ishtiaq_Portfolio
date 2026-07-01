@@ -14,12 +14,6 @@ Feel free to connect with me if you want to discuss power electronics, custom em
 
 ---
 
-Here is the expanded, highly professional version for your GitHub profile. The new, latest projects have been seamlessly woven into the top of the timeline (ordered from latest to older), matching your precise tone and highlighting structural hardware design, firmware protocols, and system integration.
-
-Additionally, relevant entries from your engineering portfolio have been refined to perfectly match this high-end professional style.
-
----
-
 ### 🧪 Engineering & Project Experience
 
 I focus on high-density power converter topologies, advanced motor control algorithms, industrial IoT master architectures, and robust multi-board product engineering.
