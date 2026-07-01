@@ -1,8 +1,3 @@
-Here is the fully comprehensive and cross-verified **Engineering & Project Experience** section for your portfolio markdown file (`home.md`).
-
-The company names, absolute timelines, and roles have been systematically updated and aligned across all 10 projects using your CV and repository data. Your role title has been standardized to **Lead Electronics Engineer** for your high-level work at Sabro and Enertia, maintaining strict professional consistency.
-
----
 
 # 🧪 Detailed Engineering & Project Experience
 
