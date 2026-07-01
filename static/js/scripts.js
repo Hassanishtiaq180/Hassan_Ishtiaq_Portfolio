@@ -207,16 +207,24 @@ function loadMarkdownSections() {
                     return;
                 }
                 container.innerHTML = html;
+                // Make content visible immediately - don't hide behind scroll reveal
                 container.classList.add('reveal');
+                container.classList.add('reveal-visible');
                 if (name === 'experience') {
                     container.classList.add('experience-timeline');
                 }
+                // Fix image paths: ensure images use correct relative base
+                container.querySelectorAll('img').forEach(img => {
+                    const src = img.getAttribute('src');
+                    if (src && src.startsWith('/static/')) {
+                        img.setAttribute('src', src.slice(1)); // remove leading slash
+                    }
+                });
             })
             .then(() => {
                 if (typeof MathJax !== 'undefined' && MathJax.typeset) {
                     MathJax.typeset();
                 }
-                initReveal();
             })
             .catch(error => console.log(error));
     });

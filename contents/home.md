@@ -1,4 +1,5 @@
-[![GitHub](https://img.shields.io/badge/GitHub-Hassan--Ishtiaq-blue?logo=github&style=for-the-badge)](https://github.com/your-username-here)
+[![GitHub](https://img.shields.io/badge/GitHub-Hassanishtiaq180-blue?logo=github&style=for-the-badge)](https://github.com/Hassanishtiaq180)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Hassan_Ishtiaq-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/hassan-ishtiaq-minhas-b3460695/)
 
 ## 👋 About Me
 
@@ -6,112 +7,32 @@ I am a **Hardware & Electronic Design Engineer** specializing in Power Electroni
 
 Driven by a passion for robust, high-efficiency physical computing, my work bridges the gap between complex power stages and real-time embedded firmware. I specialize in developing high-performance industrial systems, ranging from wide-bandgap semiconductor layouts to precision multi-axis motor controllers.
 
-Outside of my professional R&D work, I am highly focused on personal development and continuous technical growth. I am deeply invested in keeping pace with the latest advancements in wide-bandgap semiconductors, high-speed PCB layout methodologies, and modern control theory.
-
-As an engineer, I thrive on solving complex hardware constraints and optimizing system-level efficiency. I am currently focusing on advanced industrial designs and collaborating on cutting-edge power stage architectures.
+Outside of my professional R&D work, I am deeply invested in keeping pace with the latest advancements in wide-bandgap semiconductors, high-speed PCB layout methodologies, and modern control theory.
 
 Feel free to connect with me if you want to discuss power electronics, custom embedded hardware, or innovative circuit design!
 
 ---
 
-### 🧪 Engineering & Project Experience
-
-I focus on high-density power converter topologies, advanced motor control algorithms, industrial IoT master architectures, and robust multi-board product engineering.
-
-#### 1. ❄️ Split-System Inverter Air Conditioner (1.5 Tonne / 2HP) Electronics Lifecycle
-
-Designed, layed out, and engineered the complete multi-board electronic ecosystem for a commercial 2HP variable-speed inverter air conditioner, dividing processing and power architectures across isolated cards:
-
-* **Indoor Unit Mainboard:** Masterminded an MCU card controlling the indoor BLDC fan motor, electronic swing stepper motors, multi-channel room/coil temperature sensor arrays, and an integrated Wi-Fi telemetry module. Developed a robust, isolated, high-voltage single-wire AC-coupled communication physical layer to transmit synchronized data packets to the outdoor unit.
-* **Outdoor Power & Control Stage:** Developed a dual-processor architecture featuring an ESP32 master micro-controller and an Infineon IMC102T dedicated Motion Control Engine (MCE). The ESP32 coordinates an 8-channel analog sensor array, high-power four-way reversing valves, multi-stage electronic expansion valve (EEV) stepper positioning, and real-time UART-to-MCE routing. The IMC102T handles active power factor correction (PFC) switching alongside high-frequency vector space PWM injection for the Intelligent Power Modules (IPMs) regulating compressor speed.
-
-#### 2. 🔥 Industrial Heat Pump Drive & Safety Control Infrastructure
-
-Engineered and commercialized a rugged, field-deployed heat pump control board providing end-to-end drive mechanics and structural safety profiles for high-capacity thermal systems:
-
-* **Power Dynamics & Protection:** Programmed low-latency interrupt routines for real-time overcurrent, overvoltage, and undervoltage fault detection to isolate sensitive driver topologies under grid-fault or load-stall conditions.
-* **Gas & Ignition Management:** Developed an integrated automated gas flow controller featuring state-synchronized electronic spark ignition sequences, zero-cross ignition timing, and optical/thermal flame monitoring.
-* **Failsafe Operations:** Authored a hardware-software "No Gas Protection" interlock protocol that immediately cuts drive current to the compressor in the event of fuel exhaustion, preventing vacuum-induced compressor damage. Successfully passed pilot trials and deployed at scale into the industrial market.
-
-#### 3. 💧 Touch-Interactive Smart Water Dispenser Platform
-
-Designed a multi-layered, commercial-grade electronics architecture for an automated multi-source water dispensing platform featuring integrated carbonation capabilities:
-
-**Concurrence & Core Control:** Utilized an ESP32-S3 running FreeRTOS to manage asynchronous tasks across capacitive touch UI inputs, multi-pump bottom-bottle automated extraction loops, and rapid cooling/heating thermal cycles.
-
-**Fluidics & EMI Mitigation:** Integrated high-precision hall-effect flow meters for closed-loop volumetric control alongside anti-scald digital locks. Implemented distributed RC snubbers, freewheeling flyback diodes, and specialized layout routing to mitigate high-frequency electromagnetic interference (EMI) generated by inductive pump switching.
-
-
-
-#### 4. ⚡ Custom HVAC Control Board & Inverter Stage
-
-Designed and developed a comprehensive 220VAC HVAC control system featuring an Infineon IMC102T motor controller paired with an ESP32 master microcontroller. Integrated active Power Factor Correction (PFC), single-shunt current feedback loops, and precise electronic expansion valve (EEV) stepper motor control.
-
-#### 5. 🏎️ Field-Oriented Control (FOC) & Motor Drivers
-
-Extensive experience configuring and tuning Field-Oriented Control (FOC) systems using Infineon iMOTION hardware. Specialized in tuning current regulator bandwidth, optimizing $K_p/K_i$ loop gains, and establishing robust UART/Modbus communications with real-time Motion Control Engines (MCE).
-
-#### 6. 🌐 Industrial IoT & Robust Embedded Firmware
-
-Developed robust, field-deployable firmware pipelines utilizing ESP32-S3 and STM32 platforms. Implemented custom dual-stage bootloaders, secure over-the-air (OTA) firmware update structures, and advanced low-power state management for Wi-Fi/cellular-enabled remote telemetry hardware.
-
-#### 7. 🔬 Heterogeneous Power Stage R&D
-
-Researched and drafted advanced architectures for heterogeneous power stages using next-generation wide-bandgap semiconductors (GaN and SiC) targeted for 400V-class high-efficiency inverters. Focused on balancing gate-drive timing dynamics and thermal distribution across mixed-device legs.
-
-#### 8. ⛽ Real-Time Secure Fuel Telemetry & Theft Prevention Node
-
-Engineered a low-power, field-secure remote monitoring system for commercial petrol transport and station tracking:
-
-**Telemetry Processing:** Implemented ultra-low-power ESP32 sensor nodes driven by high-accuracy pulse-output flow calculation algorithms.
-
-**Encrypted Communication:** Structured an edge-to-cloud telemetry infrastructure utilizing hardware-accelerated encrypted MQTT packets over cellular/Wi-Fi links to transmit secure volume logs , executing deep sleep profiles and hardware watchdog timers to handle sustained brownout scenarios.
-
-
-
-#### 9. 🚖 Automotive Ruggedized Power Supply & Signage Controller
-
-Led the hardware engineering of a dual-sided automotive LED roof sign system for high-reliability public transport conditions:
-
-**DC-DC Buck Architecture:** Engineered a high-efficiency DC-DC buck converter topology stepping down highly noisy 12V automotive battery lines to highly regulated 5V and 3.3V logic rails, sustaining continuous 3A+ loads.
-
-
-**Environmental Hardening:** Applied stringent thermal mapping to sustain prolonged 85°C ambient operational thresholds and engineered trace spacing and vibration dampening layouts satisfying ISO 16750 standards.
-
-
-
-#### 10. 🛰️ Adaptive Network Optimization via Reinforcement Learning
-
-Researched and deployed an algorithmic routing framework optimizing data package topologies inside dynamic networking setups:
-
-**Adaptive Intelligence:** Designed a custom network routing protocol integrated with a localized Q-learning reinforcement framework.
-
-**Autonomous Decisions:** Enabled network nodes to make adaptive, self-healing routing decisions based on dynamic traffic topology shifts and link quality metrics, validating performance increases through comprehensive MATLAB/Simulink modeling environments. (Published Research Link: [MDPI Sensors](https://www.google.com/search?q=https://www.mdpi.com/1424-8220/21/12/4121/html)).
 ## 🛠 Skills & Tools
 
-* **EDA & PCB Layout**: Altium Designer, KiCad (Multi-layer high-speed routing, rigid-flex, signal/power integrity)
-* **Power Electronics**: GaN/SiC wide-bandgap design, Inverter topologies, PFC circuits, Gate driver optimization
-* **Embedded Firmware**: C/C++, Real-time operating systems (FreeRTOS), ESP-IDF, STM32Cube, Infineon MCE
-* **Peripherals & Protocols**: SPI, I2C, UART, CAN bus, Modbus, Wi-Fi, Bluetooth LE
-* **Hardware Lab Tools**: Mixed-Signal Oscilloscopes, Logic Analyzers, Programmable Electronic Loads, Spectrum Analyzers
+| Category | Skills |
+|---|---|
+| **EDA & PCB Layout** | Altium Designer, KiCad (Multi-layer, rigid-flex, signal/power integrity) |
+| **Power Electronics** | GaN/SiC wide-bandgap design, Inverter topologies, PFC circuits, Gate driver optimization |
+| **Embedded Firmware** | C/C++, FreeRTOS, ESP-IDF, STM32Cube, Infineon MCE |
+| **Protocols** | SPI, I2C, UART, CAN bus, Modbus, Wi-Fi, Bluetooth LE, MQTT |
+| **Lab Tools** | Mixed-Signal Oscilloscopes, Logic Analyzers, Electronic Loads, Spectrum Analyzers |
 
 ---
 
 ## 📚 Education
 
-* **National University of Sciences and Technology (NUST)**
-  * Master of Science in Electrical Engineering
-  * Focus: Embedded systems, computer networks, and reinforcement learning applications
+**National University of Sciences and Technology (NUST)**
+- Master of Science in Electrical Engineering
+- Focus: Embedded systems, computer networks, and reinforcement learning applications
 
 ---
 
 ## 🔍 Engineering Interests
 
 **Power Electronics** · **Wide-Bandgap Semiconductors (GaN/SiC)** · **Field-Oriented Control (FOC)** · **High-Speed PCB Design** · **Industrial IoT**
-
----
-
-## 📬 Contact
-
-* **GitHub**: (https://github.com/Hassanishtiaq180)
-* **LinkedIn**: https://www.linkedin.com/in/hassan-ishtiaq-minhas-b3460695/
