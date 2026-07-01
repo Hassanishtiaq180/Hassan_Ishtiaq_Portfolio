@@ -1,14 +1,19 @@
-## 📚 **Published**
+# 📚 Peer-Reviewed Publications
 
-* <span class="pub-badge pub-badge-icml">ICML 2025 · Poster</span> **Peijie Liu**, Fengli Xu, and Yong Li. “Token Signature: Predicting Chain-of-Thought Gains with Token Decoding Feature in Large Language Models.” *International Conference on Machine Learning (ICML)*. PMLR, 2025. <a class="pub-link-btn pub-link-pdf" href="https://arxiv.org/abs/2506.06008" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-text"></i><span>PDF</span></a>
-* <span class="pub-badge pub-badge-neurips">NeurIPS 2025 · Spotlight</span> Shang, Yu*, **Peijie Liu***, Yuwei Yan, Zijing Wu, Leheng Sheng, Yuanqing Yu, Chumeng Jiang et al. “AgentRecBench: Benchmarking LLM Agent-based Personalized Recommender Systems.” *arXiv preprint arXiv:2505.19623* (2025). <a class="pub-link-btn pub-link-pdf" href="https://arxiv.org/abs/2505.19623" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-text"></i><span>PDF</span></a>
-* <span class="pub-badge pub-badge-www">WWW 2026</span> **Peijie Liu**, Fengli Xu, and Yong Li. “TravelReasoner: Leveraging Large Reasoning Models to Address Mobility Data Gap.” *Proceedings of the ACM on Web Conference 2026*, 2026.
-* <span class="pub-badge pub-badge-icwsm">ICWSM 2025 · Oral</span> Zhang, Yunke, Yiran Fan, **Peijie Liu**, Fengli Xu, and Yong Li. “Cyber Food Swamps: Investigating the Impacts of Online-to-Offline Food Delivery Platforms on Healthy Food Choices.” In *Proceedings of the International AAAI Conference on Web and Social Media (ICWSM)*, vol. 19, pp. 2260–2272, 2025. <a class="pub-link-btn pub-link-pdf" href="https://ojs.aaai.org/index.php/ICWSM/article/view/35932" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-text"></i><span>PDF</span></a>
+I bridge the gap between advanced mathematical optimization modeling and practical embedded hardware deployments. Below are my peer-reviewed engineering publications:
 
 ---
 
-## 📄 **Preprint**
-
-* <span class="pub-badge">Preprint</span> Chen Zhilong*, **Peijie Liu***, Jinghua Piao, Fengli Xu, and Yong Li. “Shorter is Different: Characterizing the Dynamics of Short-Form Video Platforms.” *arXiv preprint arXiv:2410.16058* (2024). <a class="pub-link-btn pub-link-preprint" href="https://arxiv.org/abs/2410.16058" target="_blank" rel="noopener noreferrer"><i class="bi bi-file-earmark-text"></i><span>Preprint</span></a>
+### 1. 🛰️ A Reinforcement Learning Routing Protocol for UAV-Aided Public Safety Networks
+* **Citation:** **H. I. Minhas**, et al., "A Reinforcement Learning Routing Protocol for UAV Aided Public Safety Networks," *MDPI Sensors*, vol. 21, no. 12, p. 4121, 2021.
+* **Digital Object Identifier:** [10.3390/s21124121](https://www.mdpi.com/1424-8220/21/12/4121/html)
+* **Core Algorithmic Contribution:** Designed an adaptive, self-healing network routing protocol integrated with a localized Q-learning reinforcement framework. 
+* **Key Results:** Enabled autonomous Unmanned Aerial Vehicle (UAV) mesh nodes to dynamically alter data package routing topologies on the fly based on real-time traffic fluctuations and wireless link quality metrics, validated through strict MATLAB/Simulink simulation models.
 
 ---
+
+### 2. 🏎️ On the Impact of Clustering for Energy Critical Public Safety Networks
+* **Citation:** **H. I. Minhas**, R. Ahmad, W. Ahmed, M. M. Alam, and M. Magarani, "On the impact of clustering for Energy critical Public Safety Networks," in *Proceedings of the 2019 International Symposium on Recent Advances in Electrical Engineering (RAEE)*, Islamabad, Pakistan, 2019, pp. 1–6.
+* **Digital Object Identifier:** [10.1109/RAEE48384.2019.8887025](https://ieeexplore.ieee.org/document/8887025)
+* **Core Engineering Contribution:** Modeled and benchmarked multi-hop Device-to-Device (D2D) clustering topologies operating under severe infrastructure post-disaster hardware failures.
+* **Key Results:** Achieved a **90% to 100% improvement in total system throughput** and reduced cumulative network energy consumption profiles by **50%** via dedicated clustering routing nodes, dramatically expanding battery lifespan configurations for critical first-responder units.
