@@ -504,3 +504,15 @@ section .main-body details > *:not(summary) {
 [data-theme="dark"] section .main-body details summary:hover {
     background: rgba(45,212,191,0.1);
 }
+/* Inline badge images in skill tables */
+section .main-body table td img,
+section .main-body table th img {
+    display: inline !important;
+    vertical-align: middle;
+    margin: 2px 3px;
+}
+
+section .main-body table td {
+    vertical-align: middle;
+    line-height: 2;
+}
