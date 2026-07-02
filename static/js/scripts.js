@@ -203,21 +203,17 @@ function loadMarkdownSections() {
             .then(markdown => {
                 const html = marked.parse(markdown);
                 const container = document.getElementById(name + '-md');
-                if (!container) {
-                    return;
-                }
+                if (!container) return;
                 container.innerHTML = html;
-                // Make content visible immediately - don't hide behind scroll reveal
-                container.classList.add('reveal');
-                container.classList.add('reveal-visible');
+                container.classList.add('reveal', 'reveal-visible');
                 if (name === 'experience') {
                     container.classList.add('experience-timeline');
+                    buildAccordions(container);
                 }
-                // Fix image paths: ensure images use correct relative base
                 container.querySelectorAll('img').forEach(img => {
                     const src = img.getAttribute('src');
                     if (src && src.startsWith('/static/')) {
-                        img.setAttribute('src', src.slice(1)); // remove leading slash
+                        img.setAttribute('src', src.slice(1));
                     }
                 });
             })
@@ -227,6 +223,38 @@ function loadMarkdownSections() {
                 }
             })
             .catch(error => console.log(error));
+    });
+}
+
+function buildAccordions(container) {
+    // Find all h3 project headings (### 1. title)
+    const headings = container.querySelectorAll('h3');
+    headings.forEach(h3 => {
+        // Collect all siblings until the next h3 or hr that precedes a h3
+        const siblings = [];
+        let next = h3.nextElementSibling;
+        while (next && next.tagName !== 'H3') {
+            // stop at <hr> only if followed by an h3
+            if (next.tagName === 'HR') {
+                const afterHr = next.nextElementSibling;
+                if (afterHr && afterHr.tagName === 'H3') break;
+            }
+            siblings.push(next);
+            next = next.nextElementSibling;
+        }
+        if (siblings.length === 0) return;
+
+        // Build accordion wrapper
+        const details = document.createElement('details');
+        const summary = document.createElement('summary');
+        summary.innerHTML = h3.innerHTML;
+        details.appendChild(summary);
+
+        // Move siblings into details
+        siblings.forEach(el => details.appendChild(el));
+
+        // Replace h3 with the details element
+        h3.replaceWith(details);
     });
 }
 
