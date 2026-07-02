@@ -108,7 +108,6 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ![Dubai taxi PCB](/static/assets/img/Dubai_taxi_PCB.png)
 ![Dubai taxi PCB Proteus](/static/assets/img/Dubai_taxi_PCB_proteus.png)
-![Dubai taxi PCB Proteus PS](/static/assets/img/Dubai_taxi_PCB_proteus_PS.png)
 
 ---
 
@@ -136,7 +135,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **Outcome:** Reduced fuel theft incidents by over 30% in pilot stations.
 
 ![Fuel monitoring](/static/assets/img/Fuel.png)
-![Carbon sensor](/static/assets/img/Carbon.png)
+
 
 ---
 
@@ -148,6 +147,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 * **DC-DC Buck Architecture:** Engineered a high-efficiency DC-DC buck converter stepping down noisy 12V automotive battery lines to regulated 5V and 3.3V logic rails, sustaining continuous 3A+ loads.
 * **Environmental Hardening:** Applied stringent thermal mapping to sustain prolonged 85°C ambient operational thresholds and engineered trace spacing and vibration dampening layouts satisfying ISO 16750 standards.
+![Dubai taxi PCB Proteus PS](/static/assets/img/Dubai_taxi_PCB_proteus_PS.png)
 
 ---
 
@@ -160,7 +160,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **Sensor Node Design:** Created ESP32-based sensor nodes equipped with calibrated CO2 gas sensors and PM2.5 particulate matter detectors for continuous industrial environmental monitoring.
 * **Wireless Communication:** Integrated MQTT-based telemetry with onboard data filtering and averaging algorithms to reduce noise and improve measurement accuracy.
 * **Outcome:** Enabled real-time environmental monitoring with actionable insights, helping clients meet stringent environmental compliance standards.
-
+![Carbon sensor](/static/assets/img/Carbon.png)
 ---
 
 ### 11. ⚙️ Split Capacitor Motor (SCM) Driver Design
