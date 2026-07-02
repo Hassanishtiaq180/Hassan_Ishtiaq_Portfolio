@@ -228,6 +228,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 * Implemented NFC technology for wireless communication between ID cards and the attendance reader, enabling seamless attendance recording.
 * Programmed the system to read NFC cards, record attendance data, and store it in a dedicated database for processing and analysis.
 * Covered hardware design, firmware development, and database integration.
+![Attendance](/static/assets/img/Attendance.jpg)
 
 ---
 
