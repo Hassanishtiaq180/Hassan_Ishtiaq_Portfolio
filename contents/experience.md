@@ -23,7 +23,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 * **Power Electronics & Motor Drive:** Laid out a high-current power stage integration leveraging Intelligent Power Modules (IPMs) for variable-speed three-phase compressor commutation. Integrated an active Power Factor Correction (PFC) boost converter topology utilizing high-voltage power MOSFETs to maximize grid efficiency, eliminate total harmonic distortion (THD), and maintain DC bus stiffness.
 * **Peripherals & Safety:** Designed driver stages for an electronic expansion valve (EEV) stepper motor for variable refrigerant metering, four-way reversing valves for heat/cool cycle shifting, and a high-current outdoor BLDC fan motor. Engineered an 8-channel analog telemetry front-end tracking compressor discharge, ambient air, condenser coils, and heat-sink temperatures.
 * **Deep Circuit Troubleshooting:** Successfully diagnosed and resolved an intermittent field issue where the system experienced communication frame errors and drops down to 198V AC under full 8.5A compressor load over low-quality field wires.
-
+![PCB hardware](/static/assets/img/PCB.png)
 ![Test bench hardware](/static/assets/img/Test_Bench.jpeg)
 
 ---
