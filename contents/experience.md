@@ -51,6 +51,7 @@ A high-complexity industrial **Programmable Automation Controller (PAC)** — a 
 * **Timeline:** 01/02/2026 – Present
 * **Role:** Lead Electronics Engineer
 * **Architecture:** Dual-Board Distributed Topology (Indoor Master Control + Outdoor Power Drive Stage)
+* **Standards:** IEC 61000-3-2 (Harmonic Current Emissions) · IEC 60335-1 (Electrical Appliance Safety)
 
 #### A. Indoor Unit (IDU) Mainboard Control Card
 
@@ -75,6 +76,7 @@ A high-complexity industrial **Programmable Automation Controller (PAC)** — a 
 * **Timeline:** 10/05/2025 – 05/12/2025
 * **Role:** Lead Electronics Engineer
 * **Status:** Commercialized & Deployed at Scale
+* **Standards:** IEC 61000-3-2 (Harmonic Current Emissions) · IEC 60335-2-40 (Heat Pump Safety)
 
 #### A. High-Reliability Power Distribution & Layout Hardening
 
