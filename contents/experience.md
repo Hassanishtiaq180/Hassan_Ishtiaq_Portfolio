@@ -42,6 +42,8 @@ A high-complexity industrial **Programmable Automation Controller (PAC)** — a 
 ![PCB hardware Layer 2](/static/assets/img/pac_pcb_2.png)
 ![PCB hardware Layer 3](/static/assets/img/pac_pcb_3.png)
 ![PCB hardware Layer 4](/static/assets/img/pac_pcb_4.png)
+> **Note:** Full schematic is confidential and not disclosed per client NDA. This project took approximately 2 months to complete.
+
 ---
 
 
@@ -90,7 +92,10 @@ A high-complexity industrial **Programmable Automation Controller (PAC)** — a 
 
 * Authored a hardware-software **"No Gas Protection"** interlock protocol that immediately cuts drive current to the compressor and isolates the fuel supply line upon detecting fuel exhaustion during an active ignition command, preventing a destructive high-vacuum state.
 
+![Heat Pump Control Board PCB](/static/assets/img/Heat_pump_PCB.jpeg)
+![Heat Pump System Installed](/static/assets/img/Heat_Pump_installed.jpeg)
 ![Heat pump hardware](/static/assets/img/Heat_Pumo_table.jpeg)
+
 
 ---
 
@@ -212,6 +217,7 @@ A high-complexity industrial **Programmable Automation Controller (PAC)** — a 
 * Explored one-leg, two-leg, three-leg, and four-leg drive configurations — selected three-leg as optimal for the application.
 * Utilized ESP32 to generate six PWM signals for driving the three-leg configuration.
 * Conducted market research and identified an appropriate Full Bridge module; designed the PCB control board.
+![SCM Motor Driver PCB Layout](/static/assets/img/PWM_Gen.jpeg)
 
 ---
 
