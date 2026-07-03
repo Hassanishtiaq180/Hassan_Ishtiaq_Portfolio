@@ -3,10 +3,49 @@
 I focus on high-density power converter topologies, advanced motor control algorithms, industrial IoT master architectures, and robust multi-board product engineering. Over 15 multidisciplinary projects delivered across industrial HVAC, fuel monitoring, consumer electronics, and smart automation.
 
 ---
+### 1. 🖥️ Programmable Automation Controller (PAC) — MCB Board
 
-### 1. ❄️ Commercial Split-System Inverter Air Conditioner (1.5 Tonne / 2HP)
+* **Client:** Confidential (Freelance PCB Design)
+* **Role:** Freelance PCB Designer
+* **Technology Stack:** KiCad 9.0.5, STM32H753ZIT6, 4-Layer PCB, Industrial I/O
 
-* **Company:** Sabro Technologies
+A high-complexity industrial **Programmable Automation Controller (PAC)** — a multi-function I/O platform used in industrial process control, analogous to products from Beckhoff, Wago, or National Instruments. The design spans 5 hierarchical schematic sheets implemented on a 4-layer PCB.
+
+#### Hardware Architecture
+
+* **Microcontroller:** STM32H753ZIT6 (ARM Cortex-M7, 480MHz) managing all I/O, communication, and real-time control tasks.
+* **Digital I/O:** 18× Digital Outputs (24V logic, flyback diode, status LED, TVS protection) and 4× optically-isolated Digital Inputs with hardware debouncer.
+* **Analog I/O:** 6× Analog Inputs (RC anti-alias filter, clamping diodes, TVS protection) and 6× Analog Outputs (HART-compliant) via 2× DAC8775 DACs.
+* **Temperature Sensing:** 10× PT100 RTD inputs via MAX31865 RTD-to-Digital converters and 1× Thermocouple input via MAX31856.
+* **SSR Control:** 6× Solid State Relay control ports.
+
+#### Communication Interfaces
+
+* **Ethernet:** Dual RJ45 with integrated magnetics, DP83848C Ethernet PHY with 2:1 multiplexer for redundant network connectivity.
+* **RS-485:** Galvanically isolated transceiver (ISO1430BDWR).
+* **RS-232:** Galvanically isolated transceiver (ADM3251EARWZ).
+* **SPI / I2C:** Multiple isolated SPI channels (ISO7641FCDWR) for DAC communication, isolated I2C bus (ISO1540DR) for ADC communication.
+
+#### Power Architecture
+
+* Isolated 24V DC-DC module (THN_30-2415) for analog power domain.
+* Separate regulated rails: +5V, +3.3V, +5V_ISO, +3.3V_ISO, +24V_AN — independently regulated using LMR33640 and TPSM53602 converters.
+* Full galvanic isolation between digital and analog power domains.
+
+#### PCB Design Highlights
+
+* 4-layer stackup with dedicated signal, power, and ground planes for signal integrity and EMI control.
+* Extensive ferrite bead filters, TVS diodes, and bypass capacitors across all I/O and power domains.
+* Passive and Active power mode selection for analog circuit power sourcing.
+
+![PCB hardware Layer 1](/static/assets/img/pac_pcb_1.png)
+![PCB hardware Layer 2](/static/assets/img/pac_pcb_2.png)
+![PCB hardware Layer 3](/static/assets/img/pac_pcb_3.png)
+![PCB hardware Layer 4](/static/assets/img/pac_pcb_4.png)
+---
+
+
+### 2. ❄️ Commercial Split-System Inverter Air Conditioner (1.5 Tonne / 2HP)
 * **Timeline:** 01/02/2026 – Present
 * **Role:** Lead Electronics Engineer
 * **Architecture:** Dual-Board Distributed Topology (Indoor Master Control + Outdoor Power Drive Stage)
@@ -28,7 +67,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 2. 🔥 Industrial Heat Pump Drive & Safety Control Infrastructure
+### 3. 🔥 Industrial Heat Pump Drive & Safety Control Infrastructure
 
 * **Company:** Enertia Pvt Ltd
 * **Timeline:** 10/05/2025 – 05/12/2025
@@ -55,7 +94,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 3. 💧 Touch-Interactive Smart Water Dispenser Platform
+### 4. 💧 Touch-Interactive Smart Water Dispenser Platform
 
 * **Company:** Enertia Pvt Ltd
 * **Timeline:** 05/02/2025 – 07/08/2025
@@ -71,7 +110,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 4. ⚡ Custom HVAC Control Board & Inverter Stage
+### 5. ⚡ Custom HVAC Control Board & Inverter Stage
 
 * **Company:** Sabro Technologies
 * **Role:** Electronics Engineer
@@ -84,7 +123,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 5. 🏎️ Field-Oriented Control (FOC) & Motor Drivers
+### 6. 🏎️ Field-Oriented Control (FOC) & Motor Drivers
 
 * **Company:** Sabro Technologies
 * **Role:** Electronics Engineer
@@ -97,7 +136,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 6. 🌐 Industrial IoT & Robust Embedded Firmware
+### 7. 🌐 Industrial IoT & Robust Embedded Firmware
 
 * **Company:** Sabro Technologies
 * **Role:** Electronics Engineer
@@ -111,7 +150,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 7. 🔬 Heterogeneous Power Stage R&D
+### 8. 🔬 Heterogeneous Power Stage R&D
 
 * **Company:** Sabro Technologies R&D Lab
 * **Role:** Electronics Engineer
@@ -124,7 +163,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 8. ⛽ Real-Time Secure Fuel Telemetry & Theft Prevention Node
+### 9. ⛽ Real-Time Secure Fuel Telemetry & Theft Prevention Node
 
 * **Company:** Sabro Technologies (Industrial Automation Division)
 * **Role:** Electronics Engineer
@@ -139,7 +178,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 9. 🚖 Automotive Ruggedized Power Supply & Signage Controller
+### 10. 🚖 Automotive Ruggedized Power Supply & Signage Controller
 
 * **Company:** Sabro Technologies
 * **Role:** Electronics Engineer
@@ -151,7 +190,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 10. 🌿 Carbon Emission Monitoring System
+### 11. 🌿 Carbon Emission Monitoring System
 
 * **Company:** Sabro Technologies
 * **Role:** Electronics Engineer
@@ -163,7 +202,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 ![Carbon sensor](/static/assets/img/Carbon.png)
 ---
 
-### 11. ⚙️ Split Capacitor Motor (SCM) Driver Design
+### 12. ⚙️ Split Capacitor Motor (SCM) Driver Design
 
 * **Company:** Sabro Technologies
 * **Role:** Electronics Engineer
@@ -176,7 +215,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 12. 📡 ESP32-S2 Voltage & Current Sensor Design
+### 13. 📡 ESP32-S2 Voltage & Current Sensor Design
 
 * **Technology Stack:** ESP32-S2, Proteus PCB Design, Analog Sensing
 
@@ -187,7 +226,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 13. 🔧 Motor Driving Using STM32
+### 14. 🔧 Motor Driving Using STM32
 
 * **Technology Stack:** STM32, STEVAL-IPM20B, Motor Control Workbench
 
@@ -199,7 +238,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 14. 🔋 PFC-Based Power Supply for 2KVA Inverters
+### 15. 🔋 PFC-Based Power Supply for 2KVA Inverters
 
 * **Technology Stack:** PFC Circuit Design, PCB Layout, Power Quality
 
@@ -210,7 +249,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 15. 🤖 MOSFET-Based H-Bridge Motor Driver
+### 16. 🤖 MOSFET-Based H-Bridge Motor Driver
 
 * **Technology Stack:** MOSFET H-Bridge, High-Power PCB Design
 
@@ -220,7 +259,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 16. 🎓 Electronic Attendance System with NFC ID Cards
+### 17. 🎓 Electronic Attendance System with NFC ID Cards
 
 * **Institution:** HITEC University (Final Year Project)
 * **Technology Stack:** NFC, Microcontroller, Database Integration
@@ -233,7 +272,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 17. 🤸 Two-Wheels Self-Balancing Robot
+### 18. 🤸 Two-Wheels Self-Balancing Robot
 
 * **Technology Stack:** Gyroscope, Accelerometer, PID Control, Kalman Filter
 
@@ -244,7 +283,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 18. 🌱 Greenhouse Monitoring System
+### 19. 🌱 Greenhouse Monitoring System
 
 * **Technology Stack:** Multi-Sensor Array, Embedded Control, Automation
 
@@ -254,7 +293,7 @@ I focus on high-density power converter topologies, advanced motor control algor
 
 ---
 
-### 19. 🛰️ Adaptive Network Optimization via Reinforcement Learning
+### 20. 🛰️ Adaptive Network Optimization via Reinforcement Learning
 
 * **Company:** National University of Sciences and Technology (NUST)
 * **Role:** Research Engineer & Master's Scholar
